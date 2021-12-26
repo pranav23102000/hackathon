@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title> Engineering Stuff </title>
+    <link rel="stylesheet" href="style.css"> </link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> </link>
+    <script src="https://kit.fontawesome.com/fad11b0131.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class ="menu-bar">
+        <ul>
+            <li ><a href="main.html" class="active"><i class="fas fa-home">Home</i></a> </li>
+            <!--<li><a href="login.html"> <i class="fas fa-sign-in-alt"></i>Login  </a></li>-->
+            <li><a href="signup.html"> </i>Login/SignUp</a></li>
+            <li><a href="about.html"><i class="fas fa-address-card">About Us</i></a></li>
+            <li><a href="contact.html"><i class="fas fa-mobile-alt">FeedBack</i> </a> </li>
+            <li> <div class="dropdown">
+                    <span><i class="fas fa-phone-alt"></i></span>
+                    <div class="dropdown-content">
+                        <p>999999999</p>
+                    </div>
+                </div></li>
+        </ul> 
+    </div>
+    <button class="open-button" onclick="openForm()">Chat Support</button>
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+</html>

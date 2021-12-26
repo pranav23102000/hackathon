@@ -1,0 +1,46 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box; 
+}
+body{
+    background-color:lavender;
+}
+p{
+    text-align: center;
+    font-size: 60px;
+    font-family:"georgia", serif;
+    margin-top: 20px;
+    color: slateblue;
+    border-bottom: 3px solid #ffff00;
+    padding: 13px 0;
+}
+h3{
+    color: crimson;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+.videos ul{
+    list-style: none;
+}
+.videos ul li{
+    margin-left: 60px;
+}
+.videos ul li a{
+    
+    color: black;
+    font-size: 25px;
+}
+.notes ul{
+    list-style: none;
+}
+.notes ul li{
+    margin-left: 60px;
+}
+.notes ul li a{
+    color: black;
+    font-size: 25px;
+}
+
